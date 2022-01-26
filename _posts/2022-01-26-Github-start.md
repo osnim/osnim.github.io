@@ -4,8 +4,8 @@ author:
   name: osnim
   link: https://github.com/osnim
 date: 2022-01-26 21:00:00 +0900
-categories: [블로그, jekyll]
-tags: [Github, 블로그, jekyll, 지킬]
+categories: [blogging, jekyll]
+tags: [Github, blog, jekyll]
 pin: true
 ---
 

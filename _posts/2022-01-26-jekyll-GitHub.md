@@ -11,7 +11,7 @@ pin: true
 
 ## Github 블로그 만들기
 
-1. 자신의 Github에서 Repository를 새로 만듭니다. 중요한건 Repository 이름을 `<자신의 github이름>.github.io`로 설정해야 합니다. 제 블로그는 [**osnim GitHub 블로그**](https://osnim.github.io) 입니다.
+1. 자신의 Github에서 Repository를 새로 만듭니다. 중요한건 Repository 이름을 `<자신의 github이름>.github.io`로 설정해야 합니다. 제 블로그는 [osnim GitHub 블로그](https://osnim.github.io) 입니다.
 
 2. README file을 체크합니다. (안해도 상관 없지만 저는 하는 것을 추천합니다.)
 

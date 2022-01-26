@@ -80,11 +80,11 @@ theme_mode: [light]
 #
 # e.g. 'https://cdn.com'
 # 되는거 img_cdn: "https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images@f4e0354b674f65a53b8917f0f786ed2956898cc1"
-img_cdn:
+img_cdn: "https://cdn.jsdelivr.net/gh/osnim/Images@edc68e382d111f90dae130584bed36d2c5be1015"
 
 # the avatar on sidebar, support local or CORS resources
 # 되는거 avatar: "/commons/avatar.jpg"
-avatar:
+avatar: "/commons/hi_noglasses.jpg"
 
 # boolean type, the global switch for ToC in posts.
 toc: true

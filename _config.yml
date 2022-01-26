@@ -21,7 +21,7 @@ timezone: Asia/Seoul
 
 title: osnim # the main title
 
-tagline: 안녕하세요 김민소 Github 블로그 입니다. # it will display as the sub-title
+tagline: Python, Android(java), React, Node.js, C++, C, Linux. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, portfolio, sidebar,

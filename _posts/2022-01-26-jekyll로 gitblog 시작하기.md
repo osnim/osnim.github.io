@@ -1,183 +1,95 @@
 ---
-title: Getting Started
+title: jekyll(지킬)로 GitHub 블로그 만들기 (Windows10, 64bit)
 author:
-  name: Cotes Chung
-  link: https://github.com/cotes2020
-date: 2019-08-09 20:55:00 +0800
-categories: [Blogging, Tutorial]
-tags: [getting started]
+  name: osnim
+  link: https://github.com/osnim
+date: 2022-01-26 21:00:00 +0900
+categories: [블로그, jekyll]
+tags: [Github, 블로그, jekyll, 지킬]
 pin: true
 ---
 
-## Prerequisites
+## 서론
 
-Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of `Ruby`, `RubyGems`, `Jekyll`, and `Bundler`. In addition, [Git](https://git-scm.com/) is also required to be installed.
+### 내가 GitHub 블로그로 기록을 남기는 이유
 
-## Installation
+나도 이제 대학교를 졸업하고 제대로 취업 준비를 하려고 한다. 내 동기들은 모두 4학년에 취업준비를 시작하지만 나는 1학년 때 학점을 잘 챙겨놓지 못해서 4학년 1,2학기 21. 20 학점을 들었다. 그래서 취업 준비를 본격적으로 하지 못했다.  
+4학년 때 자격증도 따고 서류도 넣어보고필기시험도 보러 가며 나 나름대로 취업시장을 조금이나가 경험했지만 악착같이 열심히 하지 않았다. 전공 수업과 학점이 그 당시에는 더 중요했기 때문이다.
 
-### Creating a New Site
+학점을 많이 복구해서 내 기준에서의 좋은 학점까지 만들 수 있었다. 또한 내가 배우고 싶은 강의를 들으며 원하던 공부도 다 해봤다고 생각해서 이제는 온전히 취업에 신경 쓸 수 있을 것 같다. 그래서 이번 주 부터 포트폴리오, OPIC, 코딩테스트, CS에만 전념할 것이다.
 
-There are two ways to create a new repository for this theme:
+그래서 이렇게 처음 Github 블로그 작성에 보다 신경을 많이 쓰고 있으며 글도 많이 남길 것이다.
+예전의 나 였으면 Github 블로그만 만들고 그 과정에서 생긴 Error나 당황했던 내용을 모두 남기지 않고 글도 안 썼을테지만 지금은 최대한 기록들을 남기고 싶다.
+이렇게 복습하면서 공부도 하고 문제를 구글링하여 다시 찾아 해결하는 번거로움을 덜어 낼 수 있을 것이다. 하지만 가장 큰 이유는 내가 아무런 비용 없이 받았던 도움들을 또 다른 누군가에게 베풀수 있다고 생각하기 때문에 이렇게 기록을 남길 것 이다.
 
-- [**Using the Chirpy Starter**](#option-1-using-the-chirpy-starter) - Easy to upgrade, isolates irrelevant project files so you can focus on writing.
-- [**Forking on GitHub**](#option-2-forking-on-github) - Convenient for custom development, but difficult to upgrade. Unless you are familiar with Jekyll and are determined to tweak or contribute to this project, this approach is not recommended.
+## Github 블로그를 만들기
 
-#### Option 1. Using the Chirpy Starter
+1. 자신의 Github에서 Repository를 새로 만듭니다. 중요한건 Repository 이름을 `<자신의 github이름>.github.io`로 설정해야 합니다. 저의 경우는 [**내 GitHub 블로그**](https://osnim.github.io) 입니다.
 
-Create a new repository from the [**Chirpy Starter**][use-starter] and name it `<GH_USERNAME>.github.io`, where `GH_USERNAME` represents your GitHub username.
+2. README file을 체크합니다. (안해도 상관 없지만 저는 하는 것을 추천합니다.)
 
-#### Option 2. Forking on GitHub
-
-[Fork **Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork) on GitHub and rename it to `<GH_USERNAME>.github.io`. Please note that the default branch code is in development.  If you want the site to be stable, please switch to the [latest tag][latest-tag] and start writing.
-
-And then execute:
+3. 그 Repository를 로컬로 clone 합니다. ZIP파일로 다운받아서 압축을 풀어도 되고 HTTPS 주소를 복사하여 프롬프트에서 아래 명령어를 실행해도 상관없습니다.
 
 ```console
-$ bash tools/init.sh
+git clone 복사한 주소
 ```
 
-> If you don't want to deploy your site on GitHub Pages, append option `--no-gh` at the end of the above command.
-{: .prompt-note }
+압축을 푼 Explorer나 git clone을 실행한 위치에 Repository의 파일이 생성됩니다. 이 [**경로**](#경로)를 잘 기억해두셔야 합니다.
+[**Using the Chirpy Starter**](#option-1-using-the-chirpy-starter)
 
-The above command will:
-
-1. Removes some files or directories from your repository:
-    - `.travis.yml`{: .filepath}
-    - files under `_posts`{: .filepath}
-    - folder `docs`{: .filepath}
-
-2. If the option `--no-gh` is provided, the directory `.github`{: .filepath} will be deleted. Otherwise, set up the GitHub Action workflow by removing the extension `.hook`{: .filepath} of `.github/workflows/pages-deploy.yml.hook`{: .filepath}, and then remove the other files and directories in the folder `.github`{: .filepath}.
-
-3. Removes item `Gemfile.lock` from `.gitignore`{: .filepath}.
-
-4. Creates a new commit to save the changes automatically.
-
-### Installing Dependencies
-
-Before running for the first time, go to the root directory of your site, and install dependencies as follows:
+4. git push
 
 ```console
-$ bundle
+git add --all
+git commit -m "커밋 메시지"
+git push -u origin main
 ```
 
-## Usage
+5. 로컬에서 push한 github 블로그를 주소창에 넣어 확인합니다
 
-### Configuration
+   > `https://<자신의 github이름>.github.io`
 
-Update the variables of `_config.yml`{: .filepath} as needed. Some of them are typical options:
+## jekyll로 Github 블로그를 만들기
 
-- `url`
-- `avatar`
-- `timezone`
-- `lang`
+### 1. Ruby Install (Ruby 다운 및 설치)
 
-### Customing Stylesheet
+저는 이번 GitHub 블로그를 만들면서 jekyll(지킬)에서 제공하는 Theme(테마)를 사용했습니다.
+jekyll은 ruby라는 언어로 제작되었습니다. [**ruby installer**][ruby-installer] 사이트 가셔서 Ruby를 다운받고 설치를 해야합니다. (참고로 저는 Windows10 64bit 운영체제를 사용하고 있습니다.)
 
-If you need to customize the stylesheet, copy the theme's `assets/css/style.scss`{: .filepath} to the same path on your Jekyll site, and then add the custom style at the end of the style file.
+사이트에 들어가시면 `Ruby, we recommend that you use the Ruby+Devkit 2.7.X (x64) installer.` 라는 문구를 오른쪽에서 확인 할 수 있습니다. 저도 안정된 `Ruby+Devkit 2.7.5-1(x64)` 버전을 사용했고 잘 되었습니다.
+설치시 옵션을 선택할 때 `Use UTF-8 as default external encoding.`을 꼭 체크해야합니다. 저는 3개 모두 체크했습니다.
 
-Starting from [`v4.1.0`][chirpy-4.1.0], if you want to overwrite the SASS variables defined in `_sass/addon/variables.scss`{: .filepath}, create a new file `_sass/variables-hook.scss`{: .filepath} and assign new values to the target variable in it.
+### 2. jekyll을 로컬에 설치
 
-### Running Local Server
-
-You may want to preview the site contents before publishing, so just run it by:
+Ruby 설치가 완료되면 `Start Command Prompt with Ruby` 프롬프트를 실행합니다.
+처음 실행하면 경로가 `C:\Users\사용자이름` 인데 여기에 다음과 같은 명령을 넣고 실행하여 로컬에 jekyll을 설치합니다.
 
 ```console
-$ bundle exec jekyll s
+gem install jekyll bundler
 ```
 
-Or run the site on Docker with the following command:
+# 경로
+
+프롬프트 콘솔 창에서 이전에 clone한 로컬 경로인 github.io 폴더로 이동하여 다음 명령어를 순차적으로 입력합니다.
+
+### 3. Jekyll 생성 및 jekyll을 로컬 서버에서 실행
 
 ```console
-$ docker run -it --rm \
-    --volume="$PWD:/srv/jekyll" \
-    -p 4000:4000 jekyll/jekyll \
-    jekyll serve
+jekyll new ./
+bundle install
+bundle exec jekyll serve
 ```
 
-After a while, the local service will be published at _<http://127.0.0.1:4000>_.
+이렇게 입력하고 `http://127.0.0.1:4000/` 또는 `http://localhost:4000/`를 인터넷 주소창에 입력하여 로컬 서버에서 jekyll이 적용된 Github 블로그를 확인할 수 있습니다. 하지만 이는 자신의 컴퓨터에서만 확인 가능하므로 다른 사람도 접근 가능할 수 있게 Github repository에 push를 해줘야 합니다.
 
-## Deployment
+`<자신의 github이름>.github.io` repository에 다음과 같은 명령어를 입력하여 push합니다.
 
-Before the deployment begins, check out the file `_config.yml`{: .filepath} and make sure the `url` is configured correctly. Furthermore, if you prefer the [**project site**](https://help.github.com/en/github/working-with-github-pages/about-github-pages#types-of-github-pages-sites) and don't use a custom domain, or you want to visit your website with a base URL on a web server other than **GitHub Pages**, remember to change the `baseurl` to your project name that starts with a slash, e.g, `/project-name`.
-
-Now you can choose ONE of the following methods to deploy your Jekyll site.
-
-### Deploy by Using Github Actions
-
-For security reasons, GitHub Pages build runs on `safe` mode, which restricts us from using plugins to generate additional page files. Therefore, we can use **GitHub Actions** to build the site, store the built site files on a new branch, and use that branch as the source of the GitHub Pages service.
-
-Quickly check the files needed for GitHub Actions build:
-
-- Ensure your Jekyll site has the file `.github/workflows/pages-deploy.yml`{: .filepath}. Otherwise, create a new one and fill in the contents of the [sample file][workflow], and the value of the `on.push.branches` should be the same as your repo's default branch name.
-
-- Ensure your Jekyll site has file `tools/deploy.sh`{: .filepath}. Otherwise, copy it from here to your Jekyll site.
-
-- Furthermore, if you have committed `Gemfile.lock`{: .filepath} to the repo, and your runtime system is not Linux, don't forget to update the platform list in the lock file:
-
-  ```console
-  $ bundle lock --add-platform x86_64-linux
-  ```
-
-After the above steps, rename your repository to `<GH_USERNAME>.github.io` on GitHub.
-
-Now publish your Jekyll site by:
-
-1. Push any commit to remote to trigger the GitHub Actions workflow. Once the build is complete and successful, a new remote branch named `gh-pages` will appear to store the built site files.
-
-2. Browse to your repository on GitHub. Select the tab _Settings_, then click _Pages_ in the left navigation bar, and then in the section **Source** of _GitHub Pages_, select the `/(root)` directory of branch `gh-pages` as the [publishing source][pages-src]. Remember to click <kbd>Save</kbd> before leaving.
-
-    ![gh-pages-sources](/posts/20190809/gh-pages-sources.png){: width="1580" height="250" }
-
-3. Visit your website at the address indicated by GitHub.
-
-### Manually Build and Deploy
-
-On self-hosted servers, you cannot enjoy the convenience of **GitHub Actions**. Therefore, you should build the site on your local machine and then upload the site files to the server.
-
-Go to the root of the source project, and build your site as follows:
-
-```console
-$ JEKYLL_ENV=production bundle exec jekyll b
+```consol
+git add .
+git commit -m " 커밋 메세지"
+git push
 ```
 
-Or build the site on Docker:
+모두 입력 후 브라우저 주소창에 `<자신의 github이름>.github.io`를 입력하여 자신의 github 블로그를 확인합니다.
 
-```console
-$ docker run -it --rm \
-    --env JEKYLL_ENV=production \
-    --volume="$PWD:/srv/jekyll" \
-    jekyll/jekyll \
-    jekyll build
-```
-
-Unless you specified the output path, the generated site files will be placed in folder `_site`{: .filepath} of the project's root directory. Now you should upload those files to the target server.
-
-## Upgrading
-
-It depends on how you use the theme:
-
-- If you are using the theme gem (there will be `gem "jekyll-theme-chirpy"` in the `Gemfile`{: .filepath}), editing the `Gemfile`{: .filepath} and update the version number of the theme gem, for example:
-
-  ```diff
-  - gem "jekyll-theme-chirpy", "~> 3.2", ">= 3.2.1"
-  + gem "jekyll-theme-chirpy", "~> 3.3", ">= 3.3.0"
-  ```
-  {: .nolineno file="Gemfile" }
-
-  And then execute the following command:
-
-  ```console
-  $ bundle update jekyll-theme-chirpy
-  ```
-
-  As the version upgrades, the critical files (for details, see the [Startup Template][starter]) and configuration options will change. Please refer to the [Upgrade Guide](https://github.com/cotes2020/jekyll-theme-chirpy/wiki/Upgrade-Guide) to keep your repo's files in sync with the latest version of the theme.
-
-- If you forked from the source project (there will be `gemspec` in the `Gemfile`{: .filepath} of your site), then merge the [latest upstream tags][latest-tag] into your Jekyll site to complete the upgrade.
-The merge is likely to conflict with your local modifications. Please be patient and careful to resolve these conflicts.
-
-[starter]: https://github.com/cotes2020/chirpy-starter
-[use-starter]: https://github.com/cotes2020/chirpy-starter/generate
-[workflow]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/.github/workflows/pages-deploy.yml.hook
-[chirpy-4.1.0]: https://github.com/cotes2020/jekyll-theme-chirpy/releases/tag/v4.1.0
-[pages-src]: https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
-[latest-tag]: https://github.com/cotes2020/jekyll-theme-chirpy/tags
+[ruby-installer]: https://rubyinstaller.org/downloads

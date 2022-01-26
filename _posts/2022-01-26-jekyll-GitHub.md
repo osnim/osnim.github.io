@@ -6,7 +6,6 @@ author:
 date: 2022-01-26 21:00:00 +0900
 categories: [blog, jekyll]
 tags: [Github, blog, jekyll]
-pin: true
 ---
 
 ## Github 블로그 만들기

@@ -6,7 +6,6 @@ author:
 date: 2022-01-26 21:00:00 +0900
 categories: [blogging, jekyll]
 tags: [Github, blog, jekyll]
-pin: true
 ---
 
 ### 내가 GitHub 블로그로 기록을 남기는 이유

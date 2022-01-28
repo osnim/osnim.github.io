@@ -1,14 +1,53 @@
 ---
-title: GitHub 블로그에 Chirpy jekyll 테마 (theme) 적용하기
+title: Chirpy jekyll 테마에서 프로필 변경하기
 author:
   name: osnim
   link: https://github.com/osnim
-date: 2022-01-27 15:22:00 +0900
-categories: [blog, jekyll]
-tags: [blog, jekyll theme, Chirpy]
+date: 2022-01-29 00:10:00 +0900
+categories: [jekyll, chirpy]
+tags: [blog, jekyll theme, Chirpy, profil]
 ---
 
-# jekyll 테마 찾기
+# 프로필 변경
+
+Chripy 테마의 프로필 변경은 조금 특이한 방식으로 되어있습니다.
+
+**\_config.yml** 파일에서 `img_cdn` 부분과 `avatar` 부분이 프로필을 담당하고 있습니다. 그래서 먼저 `img_cdn` 부분을 분석해보았습니다.
+
+### img_cdn
+
+1. https://cdn.jsdelivr.net/gh/:
+
+   CDN 서버를 활용해서 js파일들을 전송하는 것인데 github 리포지토리에 있는 사진을 서비스 합니다.
+   gh는 github의 약자입니다.
+   자세한 사항은 [jsdelivr](https://www.jsdelivr.com/?docs=gh)에서 확인하면 됩니다.
+
+2. cotes2020/
+   여기는 자신의 GitHub 유저 이름을 입력합니다.
+
+3. chirpy-images
+   사진들이 있는 리포지토리 이름입니다.
+
+4. @f4e0354b674f65a53b8917f0f786ed2956898cc1'
+   리포지토리의 버전을 의미합니다.
+
+버전을 찾는 방법은 다음과 같습니다.
+
+Chripy jekyll 테마의 제작자의 GitHub의 [chirpy-images](https://github.com/cotes2020/chirpy-images)로 이동합니다.
+
+![google-analytics-realtime](/posts/20210103/02-google-analytics-realtime.png){: width="616" height="557"} ss
+
+![profil version1](/Images/20220129/profil_version1.png){: width="972" height="589" style="max-width: 70%" }
+
+![profil version2](/images/20220129/profil_version1.png){: width="972" height="589" style="max-width: 70%" }
+
+![profil version3](/20220129/profil_version1.png){: width="972" height="589" style="max-width: 70%" .normal}
+
+![profil version4](C:\Users\KIMMINSO\Documents\GitHub\osnim.github.io_posts\20220129\profil_version1.png){: width="972" height="589" style="max-width: 70%" .normal}
+
+![profil version5](https://cdn.jsdelivr.net/gh/osnim/posts/@2c147eb3fea50339812b16f564eb9669e018bc96/20220129/profil_version1.png)
+
+먼저 자신의 Github
 
 <https://jekyll-themes.com/free/>
 

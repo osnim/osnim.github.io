@@ -41,7 +41,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: osnim
-  email: alsth4@naver.com # change to your email address
+  email: osnim0320@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     #- https://twitter.com/username # change to your twitter homepage
@@ -80,7 +80,7 @@ theme_mode: [light]
 #
 # e.g. 'https://cdn.com'
 # 되는거 img_cdn: "https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images@f4e0354b674f65a53b8917f0f786ed2956898cc1"
-img_cdn: "https://cdn.jsdelivr.net/gh/osnim/Images@edc68e382d111f90dae130584bed36d2c5be1015"
+img_cdn: "https://cdn.jsdelivr.net/gh/osnim/Images@54b82fd57d6b3884b2652603bd435514f2ea0bab"
 
 # the avatar on sidebar, support local or CORS resources
 # 되는거 avatar: "/commons/avatar.jpg"

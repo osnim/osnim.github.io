@@ -86,7 +86,7 @@ docs 폴더,
 아까 git clone이나 ZIP파일을 압축 해제한 경로에서 다음 명령어를 실행합니다.
 
 ```console
- $ bundle bundle exec jekyll s
+ $ bundle exec jekyll s
 ```
 
 # 첫 블로그 페이지 설정 및 변경

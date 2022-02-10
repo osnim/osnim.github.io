@@ -21,7 +21,7 @@ timezone: Asia/Seoul
 
 title: osnim # the main title
 
-tagline: Python, Android(java), React, Node.js, C++, C, Linux. # it will display as the sub-title
+tagline: 하나를 하더라도 제대로 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, portfolio, sidebar,
@@ -80,7 +80,7 @@ theme_mode: [light]
 #
 # e.g. 'https://cdn.com'
 # 되는거 img_cdn: "https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images@f4e0354b674f65a53b8917f0f786ed2956898cc1"
-img_cdn: "https://cdn.jsdelivr.net/gh/osnim/Images@54b82fd57d6b3884b2652603bd435514f2ea0bab"
+img_cdn: "https://cdn.jsdelivr.net/gh/osnim/Images@125dc3649a5ac1e7d23b1ad97ead134c8032f722"
 
 # the avatar on sidebar, support local or CORS resources
 # 되는거 avatar: "/commons/avatar.jpg"

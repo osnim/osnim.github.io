@@ -4,8 +4,8 @@ author:
   name: osnim
   link: https://github.com/osnim
 date: 2022-01-27 15:22:00 +0900
-categories: [blog, jekyll]
-tags: [blog, jekyll theme, Chirpy]
+categories: [jekyll]
+tags: [blog, jekyll, theme, Chirpy]
 ---
 
 # jekyll 테마 찾기

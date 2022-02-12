@@ -80,7 +80,7 @@ theme_mode: [light]
 #
 # e.g. 'https://cdn.com'
 # 되는거 img_cdn: "https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images@f4e0354b674f65a53b8917f0f786ed2956898cc1"
-img_cdn: "https://cdn.jsdelivr.net/gh/osnim/Images@125dc3649a5ac1e7d23b1ad97ead134c8032f722"
+img_cdn: "https://cdn.jsdelivr.net/gh/osnim/Images@6500ee8afb33b13530cb3a4bb3e242b5047fe2fe"
 
 # the avatar on sidebar, support local or CORS resources
 # 되는거 avatar: "/commons/avatar.jpg"

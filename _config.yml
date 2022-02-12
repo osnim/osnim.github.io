@@ -50,8 +50,8 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: # fill in to your verification string
-<meta name="google-site-verification" content="XJrOKvvXpFItPLQlq1IE65uxWJXQhXyEwnXlrxehi3k" />
+google_site_verification: XJrOKvvXpFItPLQlq1IE65uxWJXQhXyEwnXlrxehi3k # fill in to your verification string
+
 # ↑ --------------------------
 
 google_analytics:

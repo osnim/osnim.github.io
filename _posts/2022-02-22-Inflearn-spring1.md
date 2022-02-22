@@ -1,5 +1,5 @@
 ---
-title: 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술
+title: 스프링 입문 - 1.강의소개
 author:
   name: osnim
   link: https://github.com/osnim
@@ -8,13 +8,11 @@ categories: [Inflearn]
 tags: [Inflearn, Spring]
 ---
 
-# 강의소개
-
-### 왜 Spring을 배워야 하는가?
+## 왜 Spring을 배워야 하는가?
 
 실무에서 제대로 작동하는 웹 어플리케이션을 제작하기 위해 스프링을 학습해야 함
 
-### 실제 동작하는 간단한 웹 어플리케이션 개발 과정
+## 실제 동작하는 간단한 웹 어플리케이션 개발 과정
 
 - 스프링 프로젝트 생성
 - 스프링 부트로 웹 서버 실행
@@ -23,7 +21,7 @@ tags: [Inflearn, Spring]
 - DB 연동 -JDBC, JPA, 스프링 데이터 JPA
 - 테스트 케이스 작성
 
-### 프로젝트 사용기술
+## 프로젝트 사용기술
 
 ![image](https://user-images.githubusercontent.com/79408217/155068405-3c27cb66-04c5-45ef-8fae-95b86cbb50b0.png)
 
@@ -33,7 +31,7 @@ tags: [Inflearn, Spring]
 <img src="https://img.shields.io/badge/Thymeleaf-005F0F?style=for-the-badge&logo=Thymeleaf&logoColor=white">
 - JPA (Java Persistence API)
 
-### 강의 목표
+## 강의 목표
 
 스프링 학습의 제대로 된 첫 길잡이 역할
 
@@ -41,11 +39,11 @@ tags: [Inflearn, Spring]
 - 오래된 스프링 기술과 마이너한 기술은 배제
 - 실무에서 필요한 최신 개발 트렌드 반영하여 스프링 학습
 
-### 학습 방법
+## 학습 방법
 
 처음 부터 끝까지 코딩
 
-### 스프링 완전 정복 로드맵
+## 스프링 완전 정복 로드맵
 
 - 스프링 입문 (V)
 - 스프링 핵심 원리

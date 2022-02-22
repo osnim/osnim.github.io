@@ -8,9 +8,7 @@ categories: [Inflearn]
 tags: [Inflearn, Spring]
 ---
 
-# 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술
-
-### 프로젝트 생성
+## 프로젝트 생성
 
     사전 준비
     - java 11 설치
@@ -20,7 +18,7 @@ tags: [Inflearn, Spring]
     예전에는 스프링 프로젝트를 처음부터 다 만들었다면 요즘은 대부분 스프링 부트로 스프링 프로젝트를 만듭니다.
     - URL : <https://start.spring.io>
 
-### 실제 프로젝트 생성
+## 실제 프로젝트 생성
 
 ![image](https://user-images.githubusercontent.com/79408217/155076717-e4a1df22-8c74-4ce2-a7bd-d95e3513f90f.png)
 
@@ -59,7 +57,7 @@ tags: [Inflearn, Spring]
 
 다운로드 받은 압축 파일의 압축을 풀고 IntelliJ 같은 IDE로 build.gradle 파일을 엽니다. 이후 90M 정도의 외부라이브러리를 다운 받기 때문에 완료가 될 때 까지 기다려줍니다.
 
-### 스프링 부트 파일 분석
+## 스프링 부트 파일 분석
 
 - .idea<br>
   IntelliJ 가 사용하는 설정 파일입니다.
@@ -91,7 +89,7 @@ tags: [Inflearn, Spring]
 - gitignore
   git에는 소스코드만 올라가야 하므로 빌드된 결과물은 올라가면 안됩니다. 이 과정을 스프링 부트 스타터에서 자동으로 해줍니다.
 
-### 스프링 실행하기
+## 스프링 실행하기
 
 ![image](https://user-images.githubusercontent.com/79408217/155081133-5a6264e4-001f-481c-982e-fd599d0bf3b5.png)
 
@@ -123,7 +121,7 @@ main 폴더의 HelloSpringApplication 이라는 클래스가 자동으로 만들
 
 스프링 부트 애플리케이션이 제대로
 
-### 에러
+## 에러
 
 ![image](https://user-images.githubusercontent.com/79408217/155122633-574355cd-538f-4ac3-824f-e7712ae8846f.png)
 Java HotSpot(TM) 64-Bit Server VM warning: Options -Xverify:none and -noverify were deprecated in JDK 13 and will likely be removed in a future release.

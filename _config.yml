@@ -24,9 +24,7 @@ title: osnim # the main title
 tagline: 하나를 하더라도 제대로 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+안녕하세요 osnim 입니다. 현재 안드로이드 개발자, 웹 백엔드와 프론트엔드 개발자를 꿈꾸고 있습니다.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://osnim.github.io"

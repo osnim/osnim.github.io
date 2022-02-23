@@ -63,8 +63,11 @@ junit: test를 편하게 하게 도와주는 라이브러리
 #### spring-boot-starter-test
 
 -junit: 테스트 프레임워크
+
 -mockito: 목 라이브러리
+
 -assertj: 테스트 코드를 좀 더 편하게 작성하게 도와주는 라이브러리
+
 -spring-test: 스프링 통합 테스트 지원
 
 이 글은 *김영한님*의 _스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술_ 강의를 직접 정리한 내용입니다.

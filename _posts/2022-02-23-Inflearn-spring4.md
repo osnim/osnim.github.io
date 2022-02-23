@@ -155,6 +155,12 @@ th는 thymeleaf 를 의미하며 th="http://www.thymeleaf.org" 를 통해 xmlns 
 
 이런 구조로 되어있고 ViewName은 hello로 바뀌게 되어 hello.html이 열리게 됩니다.
 
+## 참고
+
+**spring-boot-devtools** 라이브러리를 추가하면, html 파일을 컴파일만 해주면 서버 재시작 없이 View 파일 변경이 가능합니다.
+
+인텔리J 컴파일 방법: 메뉴 build Recompile
+
 이 글은 *김영한님*의 _스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술_ 강의를 직접 정리한 내용입니다.
 
 출처: <https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%9E%85%EB%AC%B8-%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8#curriculum>

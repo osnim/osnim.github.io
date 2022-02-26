@@ -62,7 +62,9 @@ libs 폴더로 이동을 하면 약 19M 정도의 jar 파일이 하나 생성되
 
 IntelliJ에서 main 메소드를 run을 실행한 결과와 똑같은 화면을 볼 수 있습니다.
 
-![image](https://user-images.githubusercontent.com/79408217/155295876-8ea97584-9c71-4858-850d-17c931f89a41.png)![image](https://user-images.githubusercontent.com/79408217/155295891-a9346d81-2d3d-4fff-ac34-80a410542eaa.png)
+![image](https://user-images.githubusercontent.com/79408217/155295876-8ea97584-9c71-4858-850d-17c931f89a41.png)
+
+![image](https://user-images.githubusercontent.com/79408217/155295891-a9346d81-2d3d-4fff-ac34-80a410542eaa.png)
 
 서버를 배포할 때는 **{프로젝트이름}-0.0.1-SNAPSHOT.jar** 파일만 복사하여 서버에 넣고 `java -jar` 으로 실행하면 됩니다.
 이렇게 하면 서버에서 스프링이 알아서 동작합니다.

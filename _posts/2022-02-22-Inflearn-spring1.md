@@ -1,10 +1,10 @@
 ---
-title: 스프링 입문 - 1.강의소개
+title: 스프링 입문 1 - 1.강의소개 - 강의소개
 author:
   name: osnim
   link: https://github.com/osnim
 date: 2022-02-22 13:50:00 +0900
-categories: [Inflearn]
+categories: [Back-end]
 tags: [Inflearn, Spring]
 ---
 

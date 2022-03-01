@@ -1,10 +1,10 @@
 ---
-title: 스프링 입문 - 2.프로젝트 생성
+title: 스프링 입문 2 - 2.프로젝트 환경설정 - 프로젝트 생성
 author:
   name: osnim
   link: https://github.com/osnim
 date: 2022-02-22 13:50:00 +0900
-categories: [Inflearn]
+categories: [Back-end]
 tags: [Inflearn, Spring]
 ---
 

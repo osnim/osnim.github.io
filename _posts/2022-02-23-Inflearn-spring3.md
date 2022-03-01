@@ -1,10 +1,10 @@
 ---
-title: 스프링 입문 - 3.라이브러리 살펴보기
+title: 스프링 입문 3 - 2.프로젝트 환경설정 - 라이브러리 살펴보기
 author:
   name: osnim
   link: https://github.com/osnim
 date: 2022-02-23 12:50:00 +0900
-categories: [Inflearn]
+categories: [Back-end]
 tags: [Inflearn, Spring]
 ---
 

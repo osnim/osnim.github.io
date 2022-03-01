@@ -4,7 +4,7 @@ author:
   name: osnim
   link: https://github.com/osnim
 date: 2022-03-01 15:00:00 +0900
-categories: [Inflearn]
+categories: [Back-end]
 tags: [Inflearn, Spring]
 ---
 

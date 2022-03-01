@@ -1,10 +1,10 @@
 ---
-title: 스프링 입문 - 5.빌드하고 실행하기
+title: 스프링 입문 3 - 2.프로젝트 환경설정 - 빌드하고 실행하기
 author:
   name: osnim
   link: https://github.com/osnim
 date: 2022-02-23 14:00:00 +0900
-categories: [Inflearn]
+categories: [Back-end]
 tags: [Inflearn, Spring]
 ---
 

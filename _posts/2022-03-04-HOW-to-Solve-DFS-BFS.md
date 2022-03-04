@@ -68,7 +68,7 @@ def dfs(graph, v, visited):
 
    for i in graph[v]:
       if not visited[i]:
-         dfs[graph, i, visited]
+         dfs(graph, i, visited)
 
 graph = [
    [],

@@ -10,10 +10,6 @@ layout: default
 
   <!-- core -->
   <div id="core-wrapper" class="col-12 col-lg-11 col-xl-8">
-
-    <!---osnim adsense-->
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1802303539345775"
-      crossorigin="anonymous"></script>
         
     <div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
 
@@ -42,8 +38,14 @@ layout: default
 
   <!-- pannel -->
   <div id="panel-wrapper" class="col-xl-3 pl-2 text-muted">
-
     <div class="access">
+      <!-- kakao AdFit 오른쪽 옆 패널광고1-->
+      <ins class="kakao_ad_area" style="display:none;" 
+        data-ad-unit    = "DAN-cJbSJcZKYFmm5kVk" 
+        data-ad-width   = "160" 
+        data-ad-height  = "600"></ins> 
+      <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+
       {% include update-list.html %}
       {% include trending-tags.html %}
     </div>
@@ -53,22 +55,20 @@ layout: default
       {% include {{ _include_path }} %}
     {% endfor %}
 
-    <!-- kakao AdFit 오른쪽 옆 패널광고1-->
-
+    <!-- kakao AdFit 오른쪽 옆 패널광고1
 <ins class="kakao_ad_area" style="display:none;" 
 data-ad-unit    = "DAN-cJbSJcZKYFmm5kVk" 
 data-ad-width   = "160" 
 data-ad-height  = "600"></ins> 
 <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
 
-<!-- kakao AdFit 오른쪽 옆 패널광고2-->
+<!-- kakao AdFit 오른쪽 옆 패널광고2
 
 <ins class="kakao_ad_area" style="display:none;" 
 data-ad-unit    = "DAN-fwdrzPFQTfCPAT8S" 
 data-ad-width   = "160" 
 data-ad-height  = "600"></ins> 
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-  
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>-->
   </div>
 
 </div>
@@ -82,6 +82,8 @@ data-ad-height  = "600"></ins>
         {% assign _include_path = _include | append: '.html' %}
         {% include {{ _include_path }} %}
       {% endfor %}
+
+
     </div>
   </div>
 </div> <!-- .row -->

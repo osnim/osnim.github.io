@@ -50,9 +50,9 @@ tags: [Inflearn, Spring]
 
 원리는 크게 이해하면 다음과 같습니다.
 
-1. 웹 브라우저에서 http://127.0.0.1:8080/hello-static.html 를 검색합니다.
+1. 웹 브라우저에서 <http://127.0.0.1:8080/hello-static.html> 를 검색합니다.
 
-2. 내장 톰캣 버서에서 웹 브라우저의 요청을 받아 스프링 부트로 http://127.0.0.1:8080/hello-static.html 입력을 넘깁니다.
+2. 내장 톰캣 버서에서 웹 브라우저의 요청을 받아 스프링 부트로 <http://127.0.0.1:8080/hello-static.html> 입력을 넘깁니다.
 
 3. (1) 스프링의 controller 쪽에서 `hello-static`와 관련된 것이 있는지 찾아봅니다. 컨트롤러가 우선순위를 가집니다. 이전 강의에서 `hello` 라는 컨트롤러는 있었지만 `hello-static`은 컨트롤러가 없었습니다.
    (2) `resouces` 디렉토리에 `static/hello-static.html` 이라는 파일을 찾습니다.

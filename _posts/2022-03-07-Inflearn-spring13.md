@@ -1,5 +1,5 @@
 ---
-title: 스프링 입문 8 - 4.회원 관리 예제 - 백엔드 개발 (5)
+title: 스프링 입문 13 - 4.회원 관리 예제 - 백엔드 개발 (5)
 author:
   name: osnim
   link: https://github.com/osnim

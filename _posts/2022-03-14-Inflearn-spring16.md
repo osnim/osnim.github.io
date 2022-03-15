@@ -10,7 +10,7 @@ tags: [Inflearn, Spring]
 
 # 회원 웹 기능
 
-이전시간에 memberController를 만들어 의존관계를 설정해놓은 것을 바탕으로 회원관리 예제를 웹 MVC로 개발 해볼 것입니다. memberController를 통해서 회원을 등록하고 조회 하는 것을 만들어 볼 것입니다.
+이전시간에 memberController를 만들어 의존관계를 설정해놓은 것을 바탕으로 회원관리 예제를 웹 MVC로 개발 해볼 것입니다. memberController를 통해서 회원을 등록하고 조회 하는 것을 만들어 보겠습니다.
 
 ## 1. 홈 화면 추가
 

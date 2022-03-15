@@ -139,7 +139,7 @@ class MemoryMemberRepositoryTest {
 
 `spring1`, `spring2` 라는 회원이 가입을 했다고 케이스를 작성하고 **assertThat(result).isEqualTo(객체이름)**으로 **findById**함수를 **run**하여 test 해보았습니다.
 
-여기서 spring 1을 2로 바꾸거나 member1을 2로 바꾸는 경우 에러가 발생하는 것을 확인할 수 있습니다.
+여기서 spring 1을 2로 바꾸거나 member1을 2로 바꾸는 경우 에러가 발생합니다.
 
 또한 각 함수별로 작동시키지 않고 Class로 묶어서 함께 test를 진행할 수도 있습니다.
 

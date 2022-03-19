@@ -1,5 +1,5 @@
 ---
-title: 스프링 입문 16 - 6.회원 관리 예제 - 웹 MVC 개발 (1)
+title: 스프링 입문 16 - 6.회원 관리 예제 - 웹 MVC 개발
 author:
   name: osnim
   link: https://github.com/osnim

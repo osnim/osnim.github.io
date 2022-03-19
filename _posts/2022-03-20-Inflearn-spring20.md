@@ -1,5 +1,5 @@
 ---
-title: 스프링 입문 19 - 7.스프링 DB 접근 기술 (4)
+title: 스프링 입문 20 - 7.스프링 DB 접근 기술 (4)
 author:
   name: osnim
   link: https://github.com/osnim

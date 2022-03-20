@@ -17,7 +17,8 @@ tags: [Inflearn, Spring]
 
 ## JdbcTemplate 회원 리포지토리 작성
 
-**jdbcTemplate**는 **injection**을 받을 수는 없다. 대신 이전에 **datasource injection** 받은 것 처럼 파라미터에 **DataSource dataSource**를 넣어 **jdbcTemplate 생성자**를 생성합니다.
+**jdbcTemplate**는 **injection**을 받을 수는 없습니다.<br>
+대신 이전에 **datasource injection** 받은 것 처럼 파라미터에 **DataSource dataSource**를 넣어 **jdbcTemplate 생성자**를 생성합니다.
 
 ### save() 기능 구현
 

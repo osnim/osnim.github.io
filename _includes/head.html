@@ -6,15 +6,13 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Google Search Console -->
-  <meta name="google-site-verification" content="U6g75McGu6XcNRz9NgKCpy1Zm172lLUZos8hMNGGnhM" />
-
-  <!-- Allow having a localized datetime different from the appearance language -->
-  {% if site.prefer_datetime_locale %}
-    <meta name="prefer-datetime-locale" content="{{ site.prefer_datetime_locale }}">
-  {% endif %}
-
   {% if page.layout == 'home' or page.layout == 'post' %}
+
+    <!-- i18n for `_javascript/utils/timeago.js` -->
+    <meta name="day-prompt" content="{{ site.data.locales[lang].post.timeago.day }}">
+    <meta name="hour-prompt" content="{{ site.data.locales[lang].post.timeago.hour }}">
+    <meta name="minute-prompt" content="{{ site.data.locales[lang].post.timeago.minute }}">
+    <meta name="justnow-prompt" content="{{ site.data.locales[lang].post.timeago.just_now }}">
 
     {% if site.google_analytics.pv.proxy_endpoint %}
       <meta name="pv-proxy-endpoint" content="{{ site.google_analytics.pv.proxy_endpoint }}">
@@ -37,20 +35,9 @@
 
   {% include favicons.html %}
 
-  {% if site.resources.ignore_env != jekyll.environment and site.resources.self_hosted %}
-
-    <link href="{{ site.data.assets[origin].webfonts | relative_url }}" rel="stylesheet">
-
-  {% else %}
-
-    {% for cdn in site.data.assets[origin].cdns %}
-      <link rel="preconnect" href="{{ cdn.url }}" {{ cdn.args }}>
-      <link rel="dns-prefetch" href="{{ cdn.url }}" {{ cdn.args }}>
-    {% endfor %}
-
-    <link rel="stylesheet" href="{{ site.data.assets[origin].webfonts }}">
-
-  {% endif %}
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
   <!-- GA -->
   {% if jekyll.environment == 'production'
@@ -63,28 +50,24 @@
 
     {% if site.google_analytics.pv.proxy_endpoint %}
       {% assign proxy_url = site.google_analytics.pv.proxy_endpoint
-          | replace: "https://", "" | split: "/" | first | prepend: "https://" %}
+        | replace: "https://", "" | split: "/" | first | prepend: "https://" %}
+
       <link rel="preconnect" href="{{ proxy_url }}" crossorigin="use-credentials">
       <link rel="dns-prefetch" href="{{ proxy_url }}">
     {% endif %}
   {% endif %}
 
+  <!-- jsDelivr CDN -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
   <!-- Bootstrap -->
   <link rel="stylesheet" href="{{ site.data.assets[origin].bootstrap.css }}">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="{{ site.data.assets[origin].fontawesome.css }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
 
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
-  {% if site.toc and page.toc %}
-    <link rel="stylesheet" href="{{ site.data.assets[origin].bootstrap-toc.css }}">
-  {% endif %}
-
-  {% if page.layout == 'page' or page.layout == 'post' %}
-    <!-- Manific Popup -->
-    <link rel="stylesheet" href="{{ site.data.assets[origin].magnific-popup.css }}">
-  {% endif %}
+  {% include css-selector.html %}
 
   <!-- JavaScript -->
 
@@ -92,6 +75,5 @@
 
   <!-- google adsence -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1802303539345775" crossorigin="anonymous"></script>
-
 
 </head>

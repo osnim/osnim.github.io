@@ -7,9 +7,11 @@ layout: compress
 
 {% include lang.html %}
 
+{% include assets-origin.html %}
+
 {% capture prefer_mode %}
   {% if site.theme_mode %}
-    mode="{{ site.theme_mode }}"
+    data-mode="{{ site.theme_mode }}"
   {% endif %}
 {% endcapture %}
 
@@ -17,11 +19,14 @@ layout: compress
 
   {% include head.html %}
 
+  <!-- google adsence -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1802303539345775" crossorigin="anonymous"></script>
+
   {% unless site.theme_mode %}
     {% include mode-toggle.html %}
   {% endunless %}
 
-  <body data-spy="scroll" data-target="#toc">
+  <body data-spy="scroll" data-target="#toc" data-topbar-visible="true">
 
     {% include sidebar.html %}
 
@@ -56,7 +61,5 @@ layout: compress
 
   </body>
 
-  <!-- google adsence -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1802303539345775" crossorigin="anonymous"></script>
-
+  
 </html>

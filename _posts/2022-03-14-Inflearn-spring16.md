@@ -205,8 +205,7 @@ A. 스프링 개발 기초 부분의 **정적 컨텐츠** 편에서 다루었던
 
 스프링을 실행하고 이름을 기입하여 회원 목록을 확인하니 저장된 이름들이 출력되는 것을 확인할 수 있었습니다.
 
-![image](https://user-images.githubusercontent.com/79408217/
-158201390-9af95f5b-aada-430e-9e9d-7b38d8e29217.png)
+![image](https://user-images.githubusercontent.com/79408217/158201390-9af95f5b-aada-430e-9e9d-7b38d8e29217.png)
 
 페이지 소스 코드를 확인하니 **memberList.html**와 달리 **thymeleaf**로 인해 렌더링 된 소스코드가 출력되는 것을 확인할 수 있었습니다.
 
